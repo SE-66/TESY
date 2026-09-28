@@ -1,0 +1,27 @@
+
+> clivo-shop@1.0.0 build
+> vite build
+
+[36mvite v7.1.5 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 2202 modules transformed.
+[31m✗[39m Build failed in 1.69s
+[31merror during build:
+[31mnode_modules/framer-motion/dist/es/projection/node/create-projection-node.mjs (1:133): "activeAnimations" is not exported by "node_modules/motion-dom/dist/es/index.mjs", imported by "node_modules/framer-motion/dist/es/projection/node/create-projection-node.mjs".[31m
+file: [36m/home/runner/work/TESY/TESY/node_modules/framer-motion/dist/es/projection/node/create-projection-node.mjs:1:133[31m
+[33m
+1: import { statsBuffer, isSVGElement, isSVGSVGElement, frame, getValueTransition, cancelFrame, time, frameData, frameSteps, microtask, activeAnim...
+                                                                                                                                        ^
+2: import { SubscriptionManager, clamp, noop } from 'motion-utils';
+3: import { animateSingleValue } from '../../animation/animate/single-value.mjs';
+[31m
+    at getRollupError (file:///home/runner/work/TESY/TESY/node_modules/rollup/dist/es/shared/parseAst.js:319:41)
+    at error (file:///home/runner/work/TESY/TESY/node_modules/rollup/dist/es/shared/parseAst.js:315:42)
+    at Module.error (file:///home/runner/work/TESY/TESY/node_modules/rollup/dist/es/shared/node-entry.js:17673:16)
+    at Module.traceVariable (file:///home/runner/work/TESY/TESY/node_modules/rollup/dist/es/shared/node-entry.js:18106:29)
+    at ModuleScope.findVariable (file:///home/runner/work/TESY/TESY/node_modules/rollup/dist/es/shared/node-entry.js:15696:39)
+    at FunctionScope.findVariable (file:///home/runner/work/TESY/TESY/node_modules/rollup/dist/es/shared/node-entry.js:5887:38)
+    at FunctionBodyScope.findVariable (file:///home/runner/work/TESY/TESY/node_modules/rollup/dist/es/shared/node-entry.js:5887:38)
+    at ChildScope.findVariable (file:///home/runner/work/TESY/TESY/node_modules/rollup/dist/es/shared/node-entry.js:5887:38)
+    at ClassBodyScope.findVariable (file:///home/runner/work/TESY/TESY/node_modules/rollup/dist/es/shared/node-entry.js:5887:38)
+    at ChildScope.findVariable (file:///home/runner/work/TESY/TESY/node_modules/rollup/dist/es/shared/node-entry.js:5887:38)[39m
