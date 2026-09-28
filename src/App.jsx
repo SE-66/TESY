@@ -9,14 +9,10 @@ import {
 } from 'lucide-react';
 
 // --- SUPABASE CONFIG ---
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabasePublishableKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://zlvyanglxtrvxhnqulya.supabase.co';
+const supabasePublishableKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || 'sb_publishable_oMAH1V6u-AnxeDkqCzCqlw_ot7fZo0e';
 
-if (!supabaseUrl || !supabasePublishableKey) {
-  console.error('Missing VITE_SUPABASE_URL or VITE_SUPABASE_PUBLISHABLE_KEY');
-}
-
-const supabase = createClient(supabaseUrl || '', supabasePublishableKey || '');
+const supabase = createClient(supabaseUrl, supabasePublishableKey);
 
 const BRAND_BLUE = "#3B82F6"; 
 
