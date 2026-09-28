@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "2.57.4",
-    "framer-motion": "12.23.12",
+    "framer-motion": "12.40.0",
     "lucide-react": "0.544.0",
     "react": "19.1.1",
     "react-dom": "19.1.1"
@@ -20,5 +20,9 @@
     "@vitejs/plugin-react": "5.0.2",
     "tailwindcss": "4.1.13",
     "vite": "7.1.5"
+  },
+  "overrides": {
+    "motion-dom": "12.40.0",
+    "motion-utils": "12.40.0"
   }
 }
